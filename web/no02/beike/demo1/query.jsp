@@ -69,9 +69,9 @@
 						<tr><td>姓名：</td><td><%=resultXm%></td></tr>
 						<tr><td>成绩：</td><td>
                                                         <%
-                                                            if(resultXh.isEmpty()){
+                                                            if(resultXh.isEmpty()){//判断字符串是否为空，如果是空表示没有找到合法的用户
                                                                 out.println("查无此人，请核对后再试。");
-                                                            }else{
+                                                            }else{//如果找到了就显示该用户（学生学号）的成绩信息
                                                         %>
 							语文：75<br>
 							数学：88<br>
