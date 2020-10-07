@@ -46,8 +46,8 @@
                 <div class="title">成绩信息查询</div>
                 <div class="body">
                     <form action="query.jsp" method="post">  
-                        <div class="login">姓名：<input type="text"></div>
-                        <div class="login">学号：<input type="text"></div>
+                        <div class="login">学号：<input type="text" name="xh"></div>
+                        <div class="login">姓名：<input type="text" name="xm"></div>
                         <div class="login center"><input type="submit" value="查询"/></div>
                         <div class="readme">
                             <span>说明：</span><br>
