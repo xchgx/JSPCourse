@@ -20,14 +20,18 @@ String[] arr = request.getParameterValues("xx");
         <h1>Hello World!</h1>
         <%=arr.length %>
         你选择的是：
+        <table border="1">
+            <tr>
         <%
             for (int idx = 0; idx < arr.length; idx++) {
                     String elem = arr[idx]; 
                     %>
-                    <%=elem%>、
+                    <td><%=elem%></td>
                     <%
                                    
                 }
         %>
+            </tr>
+        </table>
     </body>
 </html>
