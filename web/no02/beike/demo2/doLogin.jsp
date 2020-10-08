@@ -9,7 +9,7 @@
 String uname = request.getParameter("uname");
 String upass = request.getParameter("upass");
 if(uname.equals("admin") && upass.equals("123456")){%>
-<h1>登录失败，请返回重试</h1>
-<%}else{%>
 <h1>登录成功。欢迎<%=uname%>来到管理系统后台。
+<%}else{%>
+<h1>登录失败，请返回重试</h1>
 <%}%>
