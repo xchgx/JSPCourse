@@ -51,7 +51,8 @@
     <div class="login center"><input type="submit" value="查询"/></div>
     <div class="readme">
         <span>说明：</span><br>
-        此系统查询的信息是当前已经<span>考试过</span>的成绩。 
+        此系统查询的信息是当前已经<span>考试过</span>的成绩。
+        (<%=request.getAttribute("error") %>,<%=request.getParameter("xh")%>)
     </div>
 </form>
                 </div>

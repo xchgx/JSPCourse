@@ -14,13 +14,20 @@
     String xms[] = {"张三","李四"};
     String resultXh = "";//查找数据集合，寻找匹配项
     String resultXm = "";//查找数据集合，寻找匹配项
+    boolean finded = false;//默认没有找到
     for(int i = 0; i<xhs.length; i++){
         String h = xhs[i];
         if(h.equals(xh)){
+            //如果找打了就把标记改为true，说明已经找到了
+            finded = true;
             resultXh = xhs[i];
             resultXm = xms[i];
             break;
         }
+    }
+    if(!finded){
+        request.setAttribute("error", "查无此人");
+        request.getRequestDispatcher("demo1.jsp").forward(request, response);
     }
 %>
 <!DOCTYPE html>
