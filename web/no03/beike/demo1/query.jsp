@@ -28,6 +28,7 @@
     if(!finded){
         request.setAttribute("error", "查无此人");
         request.getRequestDispatcher("demo1.jsp").forward(request, response);
+//        response.sendRedirect("demo1.jsp");
     }
 %>
 <!DOCTYPE html>
