@@ -10,22 +10,22 @@
     String xh = request.getParameter("xh");//获得传递过来的学号(xh)参数，来自于表单中的name="xh"
     String xm = request.getParameter("xm");//姓名
     //模拟一些数据，用来测试
-    String xhs[] = {"20192071001","20192072002"};
-    String xms[] = {"张三","李四"};
-    String resultXh = "";//查找数据集合，寻找匹配项
-    String resultXm = "";//查找数据集合，寻找匹配项
+    String xhs[] = {"20192071001", "20192072002"};
+    String xms[] = {"张三", "李四"};
+    String findXh = "";//查找数据集合，寻找匹配项
+    String findXm = "";//查找数据集合，寻找匹配项
     boolean finded = false;//默认没有找到
-    for(int i = 0; i<xhs.length; i++){
+    for (int i = 0; i < xhs.length; i++) {
         String h = xhs[i];
-        if(h.equals(xh)){
+        if (h.equals(xh)) {
             //如果找打了就把标记改为true，说明已经找到了
             finded = true;
-            resultXh = xhs[i];
-            resultXm = xms[i];
+            findXh = xhs[i];
+            findXm = xms[i];
             break;
         }
     }
-    if(!finded){
+    if (!finded) {
         request.setAttribute("error", "查无此人");
         request.getRequestDispatcher("demo1.jsp").forward(request, response);
 //        response.sendRedirect("demo1.jsp");
@@ -72,25 +72,25 @@
                 <div class="title">成绩信息查询结果</div>
                 <div class="body">
                     <table border="1" style="border-collapse: collapse;">
-						<caption>查询结果</caption>
+                        <caption>查询结果</caption>
                         <tr><td>学号：</td><td><%=xh%></td></tr>
-						<tr><td>姓名：</td><td><%=resultXm%></td></tr>
-						<tr><td>成绩：</td><td>
-                                                        <%
-                                                            if(resultXh.isEmpty()){//判断字符串是否为空，如果是空表示没有找到合法的用户
-                                                                out.println("查无此人，请核对后再试。");
-                                                            }else{//如果找到了就显示该用户（学生学号）的成绩信息
-                                                        %>
-							语文：75<br>
-							数学：88<br>
-							英语：63<br>
-                                                        <%}%>
-						</td></tr>
+                        <tr><td>姓名：</td><td><%=findXm%></td></tr>
+                        <tr><td>成绩：</td><td>
+                                <%
+                                    if (findXh.isEmpty()) {//判断字符串是否为空，如果是空表示没有找到合法的用户
+                                        out.println("查无此人，请核对后再试。");
+                                    } else {//如果找到了就显示该用户（学生学号）的成绩信息
+                                %>
+                                语文：75<br>
+                                数学：88<br>
+                                英语：63<br>
+                                <%}%>
+                            </td></tr>
                     </table> 
                     <div class="readme">
                         <span>说明：</span><br>
                         此系统查询的信息是当前已经<span>考试过</span>的成绩。 
-						<a href="demo1.jsp">点击返回，继续查询</a>
+                        <a href="demo1.jsp">点击返回，继续查询</a>
                     </div>
                 </div>
             </div><!--查询窗口-->
