@@ -94,7 +94,7 @@
                             out.println("<li><a href=\"demo1.jsp?index=" + idx + "\">" + n + "</a></li>");
                         }
                     }
-                %> 
+                %>
             </ul>
         </div>
         <div id="nav">
@@ -108,7 +108,7 @@
                             out.println("<li><a href=\"demo1.jsp?index=" + idx + "\">" + n + "</a></li>");
                         }
                     }
-                %> 
+                %>
             </ul>
         </div>
     </body>
