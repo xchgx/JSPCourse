@@ -84,28 +84,32 @@
     </head>
     <body>
         <div id="main">
-<ul>
-    <li class="active"><a href="demo1.jsp?index=0">首页</a></li>
-    <li><a href="demo1.jsp?index=1">分类浏览</a></li>
-    <li><a href="demo1.jsp?index=2">热门咨询</a></li>
-    <li><a href="demo1.jsp?index=3">排行榜</a></li>
-    <li><a href="demo1.jsp?index=4">联系我们</a></li>
-    <li><a href="demo1.jsp?index=5">关于我们</a></li> 
-</ul>
+            <ul>
+                <%
+                    for (int idx = 0; idx < navs.length; idx++) {
+                        String n = navs[idx];
+                        if (num == idx) {
+                            out.println("<li class=\"active\"><a href=\"demo1.jsp?index=" + idx + "\">" + n + "</a></li>");
+                        } else {
+                            out.println("<li><a href=\"demo1.jsp?index=" + idx + "\">" + n + "</a></li>");
+                        }
+                    }
+                %>
+            </ul>
         </div>
         <div id="nav">
-<ul>
-    <%
-        for (int idx = 0; idx < navs.length; idx++) {
-            String n = navs[idx];
-            if (num == idx) {
-                out.println("<li class=\"active\"><a href=\"demo1.jsp?index=" + idx + "\">" + n + "</a></li>");
-            } else {
-                out.println("<li><a href=\"demo1.jsp?index=" + idx + "\">" + n + "</a></li>");
-            }
-        }
-    %>
-</ul>
+            <ul>
+                <%
+                    for (int idx = 0; idx < navs.length; idx++) {
+                        String n = navs[idx];
+                        if (num == idx) {
+                            out.println("<li class=\"active\"><a href=\"demo1.jsp?index=" + idx + "\">" + n + "</a></li>");
+                        } else {
+                            out.println("<li><a href=\"demo1.jsp?index=" + idx + "\">" + n + "</a></li>");
+                        }
+                    }
+                %>
+            </ul>
         </div>
     </body>
 </html>
