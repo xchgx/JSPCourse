@@ -34,8 +34,8 @@
     </head>
     <body>
         <h1>左中右布局</h1>
-        <div class="left"></div>
-        <div class="center"></div>
-        <div class="right"></div>
+<div class="left"></div>
+<div class="center"></div>
+<div class="right"></div>
     </body>
 </html>

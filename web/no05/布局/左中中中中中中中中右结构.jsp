@@ -23,13 +23,13 @@
     <body>
         <h1>左中中中中中中中中右结构!</h1>
         
-        <div class="nav"></div>
-        <div class="nav"></div>
-        <div class="nav"></div>
-        <div class="nav"></div>
-        <div class="nav"></div>
-        <div class="nav"></div>
-        <div class="nav"></div>
-        <div class="nav"></div>
+<div class="nav"></div>
+<div class="nav"></div>
+<div class="nav"></div>
+<div class="nav"></div>
+<div class="nav"></div>
+<div class="nav"></div>
+<div class="nav"></div>
+<div class="nav"></div>
     </body>
 </html>
