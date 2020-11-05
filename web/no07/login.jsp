@@ -12,13 +12,13 @@
         <title>登录页</title>
         <style type="text/css">
             .header{
-                height: 80px;
-                background: rgba(200,200,200,.5);
-                text-align: center;
-                line-height: 80px;
-                font-size: 20px;
-                color: rgba(0,130,160,1);
-                text-shadow: 0px 1px 0px rgba(0,0,0,.5);
+                height: 80px; /*高度*/
+                background: rgba(200,200,200,.5); /*背景*/
+                text-align: center; /*文本居中*/
+                line-height: 80px;/*行高 垂直居中*/
+                font-size: 20px;/*字体大小*/
+                color: rgba(0,130,160,1);/*字体颜色*/
+                text-shadow: 0px 1px 0px rgba(0,0,0,.5);/*文本阴影*/
             }
             .body{
                 height: 300px;
@@ -30,16 +30,16 @@
                 text-align: center;
             }
             .win{
-                position: relative;
-                width: 200px;
-                height: 160px;
-                background: white;
-                margin: 0px  auto; 
-                padding: 10px 20px;
-                top: 40px;
-                border-radius: 4px;
-                border: 1px solid rgba(0,130,160,1);
-                box-shadow: 1px 1px 0px rgba(0,130,160,.8),
+                position: relative; /*相对定位*/
+                width: 200px;/*宽度*/
+                height: 160px; /*高度*/
+                background: white; /*背景色*/
+                margin: 0px  auto; /*水平居中*/
+                padding: 10px 20px;/*内部填充（内边距）*/
+                top: 40px; /*距离顶部40像素*/
+                border-radius: 4px;/*圆角边框*/
+                border: 1px solid rgba(0,130,160,1);/*边框样式*/
+                box-shadow: 1px 1px 0px rgba(0,130,160,.8),/*盒子阴影*/
                     2px 2px 0px rgba(0,130,160,.7),
                     3px 3px 0px rgba(0,130,160,.6),
                     4px 4px 0px rgba(0,130,160,.5),
@@ -51,16 +51,16 @@
             .title{
                 color: rgba(0,130,160,1);
                 text-align: center;
-                letter-spacing: 2px;
-                font-weight: bolder;
+                letter-spacing: 2px; /*字符间距*/
+                font-weight: bolder; /*加粗*/
             }
             input{
                 width: 90%;
                 height: 24px;
-                border-radius: 2px;
+                border-radius: 2px; /*圆角矩形*/
                 border: 1px solid rgba(0,130,160,1);
-                padding-left: 24px;
-                margin-top: 10px;
+                padding-left: 24px;/*内部左边距*/
+                margin-top: 10px;/*顶部外边距*/
             }
             .button button{
                 width: 100%;
