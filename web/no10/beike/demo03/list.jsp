@@ -46,6 +46,15 @@
     </head>
     <body>
         <div id="main">
+            
+            <jsp:include flush="true" page="shangpin.jsp">
+                <jsp:param name="pic" value="img\tb08.png"></jsp:param>
+                <jsp:param name="price" value="￥3.50"></jsp:param>
+                <jsp:param name="title" value="小容量招投标U盘"></jsp:param>
+                <jsp:param name="company" value="创意数码专营店"></jsp:param>
+                <jsp:param name="label" value="掌柜热卖"></jsp:param>
+            </jsp:include>
+            
             <% for (int i = 1; i <= 8; i++) { 
                 String pic = "img\\tb0"+i+".png";
             %>  
