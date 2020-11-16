@@ -22,7 +22,15 @@
                 $("#content").load("list.jsp");
             });
             $("#btn2").click(function(){
-                $("#content").load("../demo1/demo1.jsp");
+//                $("#content").load("../demo1/demo1.jsp");
+                $.ajax({
+                    url:"../demo1/demo1.jsp",
+                    type: 'POST',
+                    data: '',
+                    success:function(msg){
+                        $("#content").html(msg);
+                    }
+                })
             });
             $("#btn3").click(function(){
                 $("#content").load("../demo2/demo2.jsp");
