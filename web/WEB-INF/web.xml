@@ -4,9 +4,17 @@
         <servlet-name>HelloServlet</servlet-name>
         <servlet-class>servlet.no15.demo1.HelloServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>DataServlet</servlet-name>
+        <servlet-class>servlet.no15.demo2.DataServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>HelloServlet</servlet-name>
         <url-pattern>/HelloServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DataServlet</servlet-name>
+        <url-pattern>/DataServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
