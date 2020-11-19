@@ -8,6 +8,10 @@
         <servlet-name>DataServlet</servlet-name>
         <servlet-class>servlet.no15.demo2.DataServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ChatServlet</servlet-name>
+        <servlet-class>servlet.no15.demo3.ChatServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>HelloServlet</servlet-name>
         <url-pattern>/HelloServlet</url-pattern>
@@ -15,6 +19,10 @@
     <servlet-mapping>
         <servlet-name>DataServlet</servlet-name>
         <url-pattern>/DataServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ChatServlet</servlet-name>
+        <url-pattern>/ChatServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
