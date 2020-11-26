@@ -24,6 +24,10 @@
         <servlet-name>QueryServlet2</servlet-name>
         <servlet-class>servlet.no14.demo1.QueryServlet2</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>AddFoodServlet</servlet-name>
+        <servlet-class>servlet.no15.addfood.AddFoodServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>HelloServlet</servlet-name>
         <url-pattern>/HelloServlet</url-pattern>
@@ -47,6 +51,10 @@
     <servlet-mapping>
         <servlet-name>QueryServlet2</servlet-name>
         <url-pattern>/QueryServlet2</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AddFoodServlet</servlet-name>
+        <url-pattern>/AddFoodServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
