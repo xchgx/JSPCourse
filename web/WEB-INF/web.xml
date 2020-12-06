@@ -1,5 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <filter>
+        <filter-name>loginFilter</filter-name>
+        <filter-class>no18.demo1.filter.LoginFilter</filter-class>
+    </filter>
+    <filter>
+        <filter-name>LogFilter</filter-name>
+        <filter-class>no18.demo2.filter.LogFilter</filter-class>
+    </filter>
+    <filter>
+        <filter-name>NotSupportFilter</filter-name>
+        <filter-class>no18.demo3.filter.NotSupportFilter</filter-class>
+    </filter>
+    <filter>
+        <filter-name>AdminAuthorityFilter</filter-name>
+        <filter-class>no18.demo4.filter.AdminAuthorityFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>AdminAuthorityFilter</filter-name>
+        <url-pattern>/no18/manager/admin/*</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>NotSupportFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>LogFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>loginFilter</filter-name>
+        <url-pattern>/no18/manager/usermanager.jsp</url-pattern>
+    </filter-mapping>
     <servlet>
         <servlet-name>HelloServlet</servlet-name>
         <servlet-class>servlet.no15.demo1.HelloServlet</servlet-class>
@@ -69,4 +101,8 @@
             30
         </session-timeout>
     </session-config>
+    <error-page>
+        <error-code>404</error-code>
+        <location>/no18/notSupport.jsp</location>
+    </error-page>
 </web-app>
